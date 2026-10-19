@@ -1,0 +1,101 @@
+{
+	"titulo": "DicionarioDados_RestricaoContrainedoff_UsiFotovoltaica",
+	"dicionario_simplificado": [
+		{
+			"descricao": "Identificador do Subsistema",
+			"codigo": "id_subsistema"
+		},
+		{
+			"descricao": "Nome do Subsistema",
+			"codigo": "nom_subsistema"
+		},
+		{
+			"descricao": "Sigla do Estado",
+			"codigo": "id_estado"
+		},
+		{
+			"descricao": "Nome do Estado",
+			"codigo": "nom_estado"
+		},
+		{
+			"descricao": "Nome da Usina ou Conjunto de Usinas",
+			"codigo": "nom_usina"
+		},
+		{
+			"descricao": "Identificador da Usina ou Conjunto no ONS",
+			"codigo": "id_ons"
+		},
+		{
+			"descricao": "Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL. Os Conjuntos de Usinas não possuem código CEG, sendo representados por “-“",
+			"codigo": "ceg"
+		},
+		{
+			"descricao": "Data/Hora",
+			"codigo": "din_instante"
+		},
+		{
+			"descricao": "Geração verificada, em MWmed. São considerados conjuntos que possuem pelo menos uma usina em operação comercial. Nesses casos, a geração das usinas em operação em teste é considerada. O valor é recebido pelo ONS pelo sistema SCADA e pode ser alterado pelo agente em ambiente de pós-operação.",
+			"codigo": "val_geracao"
+		},
+		{
+			"descricao": "Geração limitada. Representa o limite para a geração da usina/conjunto estabelecido pelo ONS em Tempo Real, em MWmed. Se o campo for nulo, não houve limitação estabelecida pelo ONS naquele patamar. Se o campo for igual a zero, o ONS solicitou que a usina/conjunto permanecesse desligada ou com injeção de potência ativa nula.",
+			"codigo": "val_geracaolimitada"
+		},
+		{
+			"descricao": "Disponibilidade Eletromecânica Verificada das usinas em operação comercial, em MWmed. O valor é recebido pelo ONS pelo sistema SCADA e pode ser alterado pelo agente em ambiente de pós-operação.",
+			"codigo": "val_disponibilidade"
+		},
+		{
+			"descricao": "Geração de referência (ou estimada), em MWmed. Representa a estimativa de quanto a usina/conjunto poderia gerar caso não houvesse limitação de geração, sendo obtida conforme mecanismos estabelecidos na RO-AO.BR.13, disponível no MPO.",
+			"codigo": "val_geracaoreferencia"
+		},
+		{
+			"descricao": "Geração de Referência Final, em MWmed. Considera as regras de apuração estabelecidas na RO-AO.BR.13 aplicadas na Geração de Referência. O valor é calculado apenas para os patamares em que houve restrição por indisponibilidade externa (REL), sendo encaminhado pelo ONS à CCEE para fins de obtenção da geração frustrada e cálculo dos ESS por constrained-off.",
+			"codigo": "val_geracaoreferenciafinal"
+		},
+		{
+			"descricao": "Código da razão da restrição, podendo ser: REL – Razão de indisponibilidade externa (elétrica). CNF – Razão de atendimento a requisitos de confiabilidade. ENE – Razão energética. PAR - Restrição indicada no parecer de acesso.",
+			"codigo": "cod_razaorestricao"
+		},
+		{
+			"descricao": "Código da origem da restrição, podendo ser: LOC – Local. SIS – Sistêmica.",
+			"codigo": "cod_origemrestricao"
+		},
+		{
+			"descricao": "Detalhamento do motivo da restrição de geração. O campo está disponível a partir de setembro/2025.",
+			"codigo": "dsc_restricao"
+		},
+		{
+			"descricao": "Identificador do ponto de conexão da usina ou conjunto de usinas",
+			"codigo": "id_pontoconexao"
+		},
+		{
+			"descricao": "Nome do ponto de conexão da usina ou conjunto de usinas",
+			"codigo": "nom_pontoconexao"
+		},
+		{
+			"descricao": "Agente responsável pela operação da usina ou conjunto de usinas",
+			"codigo": "nom_agenteoperador"
+		},
+		{
+			"descricao": "Geração Não Realizada Apurada (GNRa). Representa a estimativa de geração frustrada da usina ou conjunto de usina, obtida pela diferença entre a geração de referência e a geração verificada (Se menor que zero, GNRa = 0), nos períodos em que houve limitação de geração.",
+			"codigo": "val_geracaonaorealizadaapurada"
+		},
+		{
+			"descricao": "Número de minutos em que houve restrição por indisponibilidade externa (REL) no patamar semi-horário correspondente.",
+			"codigo": "num_minutos_rel"
+		},
+		{
+			"descricao": "Número de minutos em que houve restrição por confiabilidade (CNF) no patamar semi-horário correspondente.",
+			"codigo": "num_minutos_cnf"
+		},
+		{
+			"descricao": "Número de minutos em que houve restrição por razão energética (ENE) no patamar semi-horário correspondente.",
+			"codigo": "num_minutos_ene"
+		},
+		{
+			"descricao": "Número de minutos em que houve restrição por qualquer razão no patamar semi-horário correspondente.",
+			"codigo": "num_minutos_restricao"
+		}
+	]
+}

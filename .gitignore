@@ -1,0 +1,24 @@
+# raw data (not redistributed)
+dados/raw/
+raw/
+data/raw/
+*.parquet
+*.npz
+*.pkl
+*.nc
+*.bin
+*.zip
+*.xlsx
+*.tif
+# documents and logs
+*.docx
+*.pdf
+*.log
+__pycache__/
+*.pyc
+catboost_info/
+.ipynb_checkpoints/
+dados/ons_pv/
+dados/ons_eol/
+dados/carga/
+dados/*.parquet

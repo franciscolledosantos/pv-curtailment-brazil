@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "pv-curtailment-brazil: grid-driven versus energy-surplus curtailment of utility-scale photovoltaics in Brazil"
+version: 0.1.0
+date-released: 2026-10-18
+license: MIT
+repository-code: https://github.com/franciscolledosantos/pv-curtailment-brazil
+authors:
+  - family-names: Lledo dos Santos
+    given-names: Francisco
+    orcid: https://orcid.org/0000-0002-7718-8203
+    affiliation: Universidade do Estado de Mato Grosso (UNEMAT), ProfÁgua
+# co-authors to be added
